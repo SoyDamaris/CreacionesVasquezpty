@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creaciones Vásquez G. - Creando Experiencias Únicas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS for advanced animations -->
+    <style>
+        /* Floating particles container */
+        .particles-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .particle {
+            position: absolute;
+            background: linear-gradient(45deg, #ff6b9d, #ff8fab);
+            border-radius: 50%;
+            animation: float-particle 15s infinite linear;
+            opacity: 0.3;
+        }
+        @keyframes float-particle {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.3; }
+            90% { opacity: 0.3; }
+            100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles-container" id="particlesContainer"></div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <div class="logo">
+                        <div class="logo-shapes">
+                            <div class="shape cyan"></div>
+                            <div class="shape magenta"></div>
+                            <div class="shape yellow"></div>
+                            <div class="shape black"></div>
+                        </div>
+                        <span class="logo-text">CREACIONES VÁSQUEZ G.</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typing-text" data-text="Creando Experiencias Únicas ✨">Creando Experiencias Únicas ✨</span>
+                </h1>
+                <p class="hero-subtitle">Los recuerdos son mejores cuando los puedes tocar</p>
+                <!-- Interactive Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Productos Creados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="98">0</div>
+                        <div class="stat-label">% Satisfacción</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                </div>
+                <div class="hero-services">
+                    <span class="service-tag">❤ Regalos</span>
+                    <span class="service-tag">❤ Ramos Eternos</span>
+                    <span class="service-tag">❤ Sublimaciones</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                    <a href="#contacto" class="btn btn-secondary">Cotizar Ahora</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="bouquet-showcase">
+                    <div class="bouquet bouquet-1"></div>
+                    <div class="bouquet bouquet-2"></div>
+                    <div class="bouquet bouquet-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <p class="about-text">
+                    En Creaciones Vásquez G. nos especializamos en crear regalos únicos y memorables. 
+                    Ofrecemos sublimaciones personalizadas, ramos eternos hechos con cintas y limpiapipas, 
+                    y arreglos completamente personalizados para cada ocasión especial.
+                </p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Originalidad</h3>
+                        <p>Cada producto es único y hecho a mano</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💎</div>
+                        <h3>Durabilidad</h3>
+                        <p>Productos de alta calidad que duran para siempre</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">✨</div>
+                        <h3>Personalización</h3>
+                        <p>Arreglos diseñados especialmente para ti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Sublimaciones</h3>
+                    <p>Tazas, camisetas, tazones y más productos personalizados con tus diseños favoritos</p>
+                    <div class="service-examples">
+                        <span class="example">Tazas personalizadas</span>
+                        <span class="example">Camisetas con diseño</span>
+                        <span class="example">Tazones decorativos</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Ramos Eternos</h3>
+                    <p>Hermosos arreglos florales hechos con cintas y limpiapipas que nunca se marchitan</p>
+                    <div class="service-examples">
+                        <span class="example">Flores de cinta</span>
+                        <span class="example">Arreglos con limpiapipas</span>
+                        <span class="example">Bouquets personalizados</span>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Arreglos Personalizados</h3>
+                    <p>Creaciones únicas diseñadas especialmente para tus ocasiones especiales</p>
+                    <div class="service-examples">
+                        <span class="example">Regalos románticos</span>
+                        <span class="example">Arreglos temáticos</span>
+                        <span class="example">Centros de mesa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Galería de Productos</h2>
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="sublimaciones">Sublimaciones</button>
+                <button class="filter-btn" data-filter="ramos">Ramos Eternos</button>
+                <button class="filter-btn" data-filter="arreglos">Arreglos</button>
+            </div>
+            <div class="products-grid">
+                <!-- Ramo Rosado -->
+                <div class="product-item" data-category="ramos" data-product="ramo-rosado">
+                    <div class="product-image">
+                        <img src="images/ramo rosado.PNG" alt="Ramo Rosado" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal('ramo-rosado')">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                            <button class="btn-customize" onclick="openCustomizer('ramo-rosado')">
+                                <i class="fas fa-palette"></i> Personalizar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ramo Eterno Rosado</h3>
+                        <p>Hermoso bouquet rosado con flores de cinta y detalles elegantes</p>
+                        <div class="product-price">Desde $25</div>
+                        <div class="product-actions">
+                            <button class="btn btn-sm btn-primary" onclick="openProductModal('ramo-rosado')">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Productos Girasoles -->
+                <div class="product-item" data-category="ramos" data-product="productos-girasoles">
+                    <div class="product-image">
+                        <img src="images/girasoles.PNG" alt="Productos Girasoles" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal('productos-girasoles')">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                            <button class="btn-customize" onclick="openCustomizer('productos-girasoles')">
+                                <i class="fas fa-palette"></i> Personalizar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Colección Girasoles</h3>
+                        <p>Hermosos girasoles eternos hechos con cintas amarillas brillantes</p>
+                        <div class="product-price">Desde $30</div>
+                        <div class="product-actions">
+                            <button class="btn btn-sm btn-primary" onclick="openProductModal('productos-girasoles')">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Papo Rosado -->
+                <div class="product-item" data-category="ramos" data-product="papo-rosado">
+                    <div class="product-image">
+                        <img src="images/Papo rosado.PNG" alt="Papo Rosado" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal('papo-rosado')">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                            <button class="btn-customize" onclick="openCustomizer('papo-rosado')">
+                                <i class="fas fa-palette"></i> Personalizar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Papo Rosado Especial</h3>
+                        <p>Arreglo único con flores de cinta en tonos rosados suaves</p>
+                        <div class="product-price">Desde $28</div>
+                        <div class="product-actions">
+                            <button class="btn btn-sm btn-primary" onclick="openProductModal('papo-rosado')">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ramo Grande -->
+                <div class="product-item" data-category="ramos" data-product="ramo-grande">
+                    <div class="product-image">
+                        <img src="images/ramo grande.PNG" alt="Ramo Grande" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal('ramo-grande')">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                            <button class="btn-customize" onclick="openCustomizer('ramo-grande')">
+                                <i class="fas fa-palette"></i> Personalizar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ramo Grande Premium</h3>
+                        <p>Espectacular ramo grande con múltiples flores de cinta</p>
+                        <div class="product-price">Desde $45</div>
+                        <div class="product-actions">
+                            <button class="btn btn-sm btn-primary" onclick="openProductModal('ramo-grande')">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ramo Rojo con Girasol -->
+                <div class="product-item" data-category="ramos" data-product="ramo-rojo-girasol">
+                    <div class="product-image">
+                        <img src="images/ramo rojo con girasol en el centro.PNG" alt="Ramo Rojo con Girasol" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal('ramo-rojo-girasol')">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                            <button class="btn-customize" onclick="openCustomizer('ramo-rojo-girasol')">
+                                <i class="fas fa-palette"></i> Personalizar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ramo Rojo con Girasol</h3>
+                        <p>Combinación perfecta de rosas rojas y girasoles vibrantes</p>
+                        <div class="product-price">Desde $40</div>
+                        <div class="product-actions">
+                            <button class="btn btn-sm btn-primary" onclick="openProductModal('ramo-rojo-girasol')">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hot Wheels -->
+                <div class="product-item" data-category="ramos" data-product="hotwheels">
+                    <div class="product-image">
+                        <img src="images/Hotwheels.PNG" alt="Ramo Hot Wheels" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal('hotwheels')">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                            <button class="btn-customize" onclick="openCustomizer('hotwheels')">
+                                <i class="fas fa-palette"></i> Personalizar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ramo Temático Hot Wheels</h3>
+                        <p>Ramo eterno decorado con temática de Hot Wheels</p>
+                        <div class="product-price">Desde $35</div>
+                        <div class="product-actions">
+                            <button class="btn btn-sm btn-primary" onclick="openProductModal('hotwheels')">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stick -->
+                <div class="product-item" data-category="ramos" data-product="stick">
+                    <div class="product-image">
+                        <img src="images/stick.PNG" alt="Ramo Stick" class="product-img">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal('stick')">
+                                <i class="fas fa-eye"></i> Vista Rápida
+                            </button>
+                            <button class="btn-customize" onclick="openCustomizer('stick')">
+                                <i class="fas fa-palette"></i> Personalizar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ramo Stick Decorativo</h3>
+                        <p>Elegante ramo con flores en stick para ocasiones especiales</p>
+                        <div class="product-price">Desde $30</div>
+                        <div class="product-actions">
+                            <button class="btn btn-sm btn-primary" onclick="openProductModal('stick')">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Contactanos</h2>
+                    <p class="contact-description">
+                        ¿Tienes una idea especial? ¡Contáctanos para crear algo único para ti!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fab fa-instagram"></i>
+                            <span>@creaciones.vg_pty</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ciudad de Panamá, Panamá</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-store"></i>
+                            <span>Tienda Online 🛒</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="sublimaciones">Sublimaciones</option>
+                                <option value="ramos">Ramos Eternos</option>
+                                <option value="arreglos">Arreglos Personalizados</option>
+                                <option value="consulta">Consulta General</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Cuéntanos qué tienes en mente..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-carousel">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"El ramo que me hicieron para mi aniversario fue absolutamente hermoso. Los detalles con las cintas y los colores quedaron perfectos. ¡Definitivamente volveré a pedir!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👩</div>
+                            <div class="author-info">
+                                <h4>María González</h4>
+                                <span>Cliente desde 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Las tazas personalizadas que encargamos para el equipo de trabajo quedaron increíbles. La calidad de la sublimación es excelente y el diseño exactamente como lo queríamos."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👨</div>
+                            <div class="author-info">
+                                <h4>Carlos Rodríguez</h4>
+                                <span>Cliente corporativo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"El arreglo personalizado para la boda de mi hija fue el centro de atención. Todos preguntaban dónde lo habíamos conseguido. ¡Gracias por hacer esa noche más especial!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👩</div>
+                            <div class="author-info">
+                                <h4>Ana Vásquez</h4>
+                                <span>Mamá orgullosa</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev" onclick="changeTestimonial(-1)">❮</button>
+                <div class="testimonial-dots">
+                    <span class="dot active" onclick="currentTestimonial(1)"></span>
+                    <span class="dot" onclick="currentTestimonial(2)"></span>
+                    <span class="dot" onclick="currentTestimonial(3)"></span>
+                </div>
+                <button class="testimonial-next" onclick="changeTestimonial(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeProductModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="product-viewer-360" id="productViewer360">
+                        <div class="product-viewer-item active"></div>
+                    </div>
+                    <div class="modal-thumbnails">
+                        <div class="thumbnail active" onclick="changeProductView(0)"></div>
+                        <div class="thumbnail" onclick="changeProductView(1)"></div>
+                        <div class="thumbnail" onclick="changeProductView(2)"></div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle">Producto</h2>
+                    <div class="modal-rating">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <span class="rating-text">(4.9/5 - 127 reseñas)</span>
+                    </div>
+                    <p id="modalDescription">Descripción del producto</p>
+                    <div class="modal-price">
+                        <span class="price-main" id="modalPrice">$25</span>
+                        <span class="price-sub">Desde</span>
+                    </div>
+                    <div class="customization-options" id="customizationOptions">
+                        <h3>Opciones de Personalización</h3>
+                        <div class="color-picker">
+                            <label>Colores disponibles:</label>
+                            <div class="color-options">
+                                <div class="color-option active" data-color="#ff6b9d" style="background: #ff6b9d;"></div>
+                                <div class="color-option" data-color="#ffd700" style="background: #ffd700;"></div>
+                                <div class="color-option" data-color="#a8edea" style="background: #a8edea;"></div>
+                                <div class="color-option" data-color="#d299c2" style="background: #d299c2;"></div>
+                            </div>
+                        </div>
+                        <div class="size-selector">
+                            <label>Tamaño:</label>
+                            <select id="productSize">
+                                <option value="small">Pequeño (+$0)</option>
+                                <option value="medium" selected>Mediano (+$5)</option>
+                                <option value="large">Grande (+$10)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn btn-primary btn-full" onclick="addToCart()">
+                            <i class="fas fa-shopping-cart"></i> Agregar al Carrito
+                        </button>
+                        <button class="btn btn-secondary" onclick="openCustomizer()">
+                            <i class="fas fa-palette"></i> Personalizar más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customizer Modal -->
+    <div id="customizerModal" class="modal">
+        <div class="modal-content customizer-modal">
+            <span class="modal-close" onclick="closeCustomizer()">&times;</span>
+            <div class="modal-body">
+                <h2>Personalizador de Producto</h2>
+                <div class="customizer-container">
+                    <div class="customizer-preview">
+                        <div class="product-preview" id="productPreview">
+                            <div class="preview-item" id="previewItem">
+                                <!-- Se actualiza dinámicamente -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customizer-panel">
+                        <div class="customization-section">
+                            <h3>Elementos a personalizar</h3>
+                            <div class="customization-item">
+                                <label>Texto personalizado:</label>
+                                <input type="text" id="customText" placeholder="Ingresa tu texto aquí" oninput="updatePreview()">
+                            </div>
+                            <div class="customization-item">
+                                <label>Color principal:</label>
+                                <input type="color" id="primaryColor" value="#ff6b9d" onchange="updatePreview()">
+                            </div>
+                            <div class="customization-item">
+                                <label>Color secundario:</label>
+                                <input type="color" id="secondaryColor" value="#ffd700" onchange="updatePreview()">
+                            </div>
+                            <div class="customization-item">
+                                <label>Cantidad:</label>
+                                <input type="number" id="customQuantity" value="1" min="1" max="10">
+                            </div>
+                        </div>
+                        <div class="customizer-summary">
+                            <h4>Resumen del pedido</h4>
+                            <div class="summary-item">
+                                <span>Producto base:</span>
+                                <span id="summaryBasePrice">$25</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Personalización:</span>
+                                <span id="summaryCustomPrice">$5</span>
+                            </div>
+                            <div class="summary-item">
+                                <span>Cantidad:</span>
+                                <span id="summaryQuantity">1</span>
+                            </div>
+                            <div class="summary-item total">
+                                <span>Total:</span>
+                                <span id="summaryTotal">$30</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-full" onclick="addCustomToCart()">
+                            <i class="fas fa-shopping-cart"></i> Agregar al Carrito Personalizado
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-shapes">
+                            <div class="shape cyan"></div>
+                            <div class="shape magenta"></div>
+                            <div class="shape yellow"></div>
+                            <div class="shape black"></div>
+                        </div>
+                        <span class="logo-text">CREACIONES VÁSQUEZ G.</span>
+                    </div>
+                    <p>Creando Experiencias Únicas desde Panamá</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Creaciones Vásquez G. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
